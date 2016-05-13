@@ -47,8 +47,11 @@ class SiteController extends Controller
         ];
     }
 
+    public $layout = 'template';
+
     public function actionIndex()
     {
+        //$this->pageTitle = 'Home page';
         return $this->render('index');
     }
 
